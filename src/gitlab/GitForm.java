@@ -59,10 +59,25 @@ public class GitForm extends javax.swing.JFrame {
         });
 
         saveButton.setText("Save Data");
+        saveButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                saveButtonActionPerformed(evt);
+            }
+        });
 
         fetchFile.setText("Fetch from File");
+        fetchFile.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fetchFileActionPerformed(evt);
+            }
+        });
 
         displayButton.setText("Display File");
+        displayButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                displayButtonActionPerformed(evt);
+            }
+        });
 
         displayTextArea.setColumns(20);
         displayTextArea.setRows(5);
@@ -139,7 +154,23 @@ public class GitForm extends javax.swing.JFrame {
 
     private void fetchFieldButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fetchFieldButtonActionPerformed
         // TODO add your handling code here:
+        displayTextArea.setText("Hello Guys, You just fetched data from the file");
     }//GEN-LAST:event_fetchFieldButtonActionPerformed
+
+    private void displayButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_displayButtonActionPerformed
+        // TODO add your handling code here:
+        displayTextArea.setText("Hello Guys, You just pushed the display button");
+    }//GEN-LAST:event_displayButtonActionPerformed
+
+    private void saveButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveButtonActionPerformed
+        // TODO add your handling code here:
+        displayTextArea.setText("Hello Guys, You just saved data");
+    }//GEN-LAST:event_saveButtonActionPerformed
+
+    private void fetchFileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fetchFileActionPerformed
+        // TODO add your handling code here:
+        displayTextArea.setText("Hello Guys, You just fetched from the File");
+    }//GEN-LAST:event_fetchFileActionPerformed
 
     /**
      * @param args the command line arguments

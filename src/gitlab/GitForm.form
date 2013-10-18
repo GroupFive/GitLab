@@ -144,16 +144,25 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Save Data"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="saveButtonActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="fetchFile">
       <Properties>
         <Property name="text" type="java.lang.String" value="Fetch from File"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fetchFileActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="displayButton">
       <Properties>
         <Property name="text" type="java.lang.String" value="Display File"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="displayButtonActionPerformed"/>
+      </Events>
     </Component>
     <Container class="javax.swing.JScrollPane" name="jScrollPane1">
       <AuxValues>
